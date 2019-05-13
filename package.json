@@ -2,9 +2,9 @@
   "name": "agenda",
   "version": "2.0.2",
   "description": "Light weight job scheduler for Node.js",
-  "main": "index.js",
+  "main": "index-es5.js",
   "files": [
-    "lib"
+    "lib-es5"
   ],
   "engines": {
     "node": ">=8.0.0"
@@ -17,7 +17,7 @@
     "mocha-debug-internal": "DEBUG=agenda:internal:** mocha --reporter spec --timeout 8000 -b",
     "mocha-debug-all": "DEBUG=agenda:** mocha --reporter spec --timeout 8000 -b",
     "blanket": {
-      "pattern": "lib",
+      "pattern": "lib-es5",
       "data-cover-never": "node_modules"
     },
     "docs": "jsdoc --configure .jsdoc.json --verbose",
